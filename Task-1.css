@@ -1,0 +1,14 @@
+.Header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: turquoise;
+}
+
+.page{
+    background-color: beige;
+}
+
+.table{
+    border: 2px solid black;
+}

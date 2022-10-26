@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-</title>
+    <link rel="stylesheet" href="Task-1.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2 class="Header">HTTP 1.1 AND HTTP 2</h2>
+
+    <h3>What is HTTP</h3>
+    <P>hThe Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load web pages
+        using hypertext links. HTTP is an application layer protocol designed to transfer information between networked
+        devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a
+        client machine making a request to a server, which then sends a response message.</P>
+    <div class="table">
+        <table class="table-1">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Points</th>
+                    <th scope="col">HTTP 1.1</th>
+                    <th scope="col">HTTP 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Multiplexing</td>
+                    <td>HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all
+                        the other resources behind it</td>
+                    <td>HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that
+                        no one resource blocks any other resource. HTTP/2 does this by splitting data into binary-code
+                        messages and numbering these messages so that the client knows which stream each binary message
+                        belongs to.</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Server push</td>
+                    <td>Typically, a server only serves content to a client device if the client asks for it. However,
+                        this approach is not always practical for modern webpages, which often involve several dozen
+                        separate resources that the client must request.</td>
+                    <td>HTTP/2 solves this problem by allowing a server to "push" content to a client before the client
+                        asks for it. The server also sends a message letting the client know what pushed content to
+                        expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole
+                        thing.</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Header compression</td>
+                    <td>Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and
+                        HTTP/2 compress HTTP messages to make them smaller.</td>
+                    <td>HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant
+                        information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given
+                        the volume of HTTP packets involved in loading even a single webpage, those bytes add up
+                        quickly, resulting in faster loading.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

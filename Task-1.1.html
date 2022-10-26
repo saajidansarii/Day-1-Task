@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects And Its Internal Representation In JavaScript</title>
+    <link rel="stylesheet" href="Task-1.1.css">
+
+</head>
+
+<body>
+    <div class="blog">
+        <h2>Objects And Its Internal Representation In JavaScript</h2>
+        <p class="text one">Objects, in JavaScript, is it’s most important data-type and forms the building blocks for
+            modern JavaScript.
+            These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null,
+            undefined and symbol) in the sense that while these primitive data-types all store a single value each
+            (depending on their types).</p>
+        <p class="text two">Objects are more complex and each object may contain any combination of these primitive
+            data-types as well as
+            reference data-types. 
+            An object, is a reference data type. Variables that are assigned a reference value are given a reference or
+            a
+            pointer to that value. That reference or pointer points to the location in memory where the object is
+            stored.
+            The variables don’t actually store the value.</p>
+        <p class="text three">Loosely speaking, objects in JavaScript may be defined as an unordered collection of
+            related data, of primitive
+            or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are
+            called
+            properties and methods, respectively, in the context of an object.</p>
+        <p class="text four"> For Eg. If your object is a student, it will have properties like name, age, address, id,
+            etc and methods like
+            updateAddress, updateNam, etc.</p>
+
+        <h3>Objects and properties</h3>
+
+        <p class="text five">A JavaScript object has properties associated with it. A property of an object can be
+            explained as a variable
+            that is attached to the object. Object properties are basically the same as ordinary JavaScript variables,
+            except for the attachment to objects. The properties of an object define the characteristics of the object.
+            You
+            access the properties of an object with a simple dot-notation:</p>
+
+        <div>
+            <span class="code one">objectName.propertyName</span>
+        </div>
+
+        <p class="text six">Like all JavaScript variables, both the object name (which could be a normal variable) and
+            property name are case
+            sensitive. You can define a property by assigning it a value. For example, let’s create an object named
+            myCar
+            and give it properties named make, model, and year as follows:</p>
+
+        <div>
+            <span class="code two">var myCar = new Object();
+                myCar.make = 'Ford';
+                myCar.model = 'Mustang';
+                myCar.year = 1969;
+            </span>
+        </div>
+        <p class="text seven">Unassigned properties of an object are undefined (and not null).</p>
+
+        <span class="code three">myCar.color; // undefined</span>
+
+        <p class="text eight">Properties of JavaScript objects can also be accessed or set using a bracket notation (for
+            more details see
+            property accessors). Objects are sometimes called associative arrays, since each property is associated with
+            a
+            string value that can be used to access it. So, for example, you could access the properties of the myCar
+            object
+            as follows:</p>
+
+        <div>
+            <span class="code four">myCar['make'] = 'Ford';
+                myCar['model'] = 'Mustang';
+                myCar['year'] = 1969;
+            </span>
+        </div>
+
+        <p class="text nine">An object property name can be any valid JavaScript string, or anything that can be
+            converted to a string,
+            including the empty string. However, any property name that is not a valid JavaScript identifier (for
+            example, a
+            property name that has a space or a hyphen, or that starts with a number) can only be accessed using the
+            square
+            bracket notation. This notation is also very useful when property names are to be dynamically determined
+            (when
+            the property name is not determined until runtime). Examples are as follows:
+        </p>
+
+        <div class="code five">           
+                <p>// four variables are created and assigned in a single go,</p>
+                <p>// separated by commas</p>
+                <p>var myObj = new Object(),</p>
+                <p>str = 'myString',</p>
+                <p>rand = Math.random(),</p>
+                <p>obj = new Object();</p>
+                <p>myObj.type = 'Dot syntax';</p>
+                <p>myObj['date created'] = 'String with space';</p>
+                <p>myObj[str] = 'String value';</p>
+                <p>myObj[rand] = 'Random Number';</p>
+                <p>myObj[obj] = 'Object';</p>
+                <p>myObj[''] = 'Even an empty string';console.log(myObj);      
+        </div>
+
+        <p class="text ten">You can also access properties by using a string value that is stored in a variable:</p>
+    </div> 
+
+
+</body>
+
+</html>
